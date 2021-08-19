@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Aug 19 13:47:04 2021
+# Process ID: 5724
+# Current directory: C:/Users/rebec/Desktop/Automobile_Mirror_Display_system/Automobile_Mirror_Display_system.runs/synth_1
+# Command line: vivado.exe -log Mirror_Display_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Mirror_Display_1.tcl
+# Log file: C:/Users/rebec/Desktop/Automobile_Mirror_Display_system/Automobile_Mirror_Display_system.runs/synth_1/Mirror_Display_1.vds
+# Journal file: C:/Users/rebec/Desktop/Automobile_Mirror_Display_system/Automobile_Mirror_Display_system.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Mirror_Display_1.tcl -notrace
