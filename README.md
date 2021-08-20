@@ -13,3 +13,5 @@
 **3. LED Blink**
 
 **4. 4-bit Full Adder Seven Segment Display**
+
+**5. Binary to Decimal Converter**
