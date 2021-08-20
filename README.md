@@ -11,3 +11,5 @@
 **2. Calculator**
 
 **3. LED Blink**
+
+**4. 4-bit Full Adder Seven Segment Display**
