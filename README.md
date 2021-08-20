@@ -6,7 +6,7 @@
 
 # Features
 
-**1. Automobile_Mirror_Display_system**
+**1. Automobile_Mirror_Display_system(MUX)**
 
 **2. Calculator**
 
