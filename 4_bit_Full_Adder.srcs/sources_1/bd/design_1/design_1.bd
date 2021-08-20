@@ -1,0 +1,154 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xE857CA94E857CA94",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../4_bit_Full_Adder.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Seven_Segment_0": "",
+      "Four_bit_Full_Adder_0": ""
+    },
+    "ports": {
+      "A": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "B": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "Seg": {
+        "direction": "O",
+        "left": "6",
+        "right": "0"
+      },
+      "an": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "OV_S": {
+        "direction": "O"
+      },
+      "OV_U": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "Seven_Segment_0": {
+        "vlnv": "xilinx.com:module_ref:Seven_Segment:1.0",
+        "xci_name": "design_1_Seven_Segment_0_0",
+        "xci_path": "ip\\design_1_Seven_Segment_0_0\\design_1_Seven_Segment_0_0.xci",
+        "inst_hier_path": "Seven_Segment_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Seven_Segment",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "D": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "Seg": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          },
+          "an": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "Four_bit_Full_Adder_0": {
+        "vlnv": "xilinx.com:module_ref:Four_bit_Full_Adder:1.0",
+        "xci_name": "design_1_Four_bit_Full_Adder_0_0",
+        "xci_path": "ip\\design_1_Four_bit_Full_Adder_0_0\\design_1_Four_bit_Full_Adder_0_0.xci",
+        "inst_hier_path": "Four_bit_Full_Adder_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Four_bit_Full_Adder",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "B": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "Sum": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "OV_S": {
+            "direction": "O"
+          },
+          "OV_U": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "A_1": {
+        "ports": [
+          "A",
+          "Four_bit_Full_Adder_0/A"
+        ]
+      },
+      "B_1": {
+        "ports": [
+          "B",
+          "Four_bit_Full_Adder_0/B"
+        ]
+      },
+      "Four_bit_Full_Adder_0_OV_S": {
+        "ports": [
+          "Four_bit_Full_Adder_0/OV_S",
+          "OV_S"
+        ]
+      },
+      "Four_bit_Full_Adder_0_OV_U": {
+        "ports": [
+          "Four_bit_Full_Adder_0/OV_U",
+          "OV_U"
+        ]
+      },
+      "Four_bit_Full_Adder_0_Sum": {
+        "ports": [
+          "Four_bit_Full_Adder_0/Sum",
+          "Seven_Segment_0/D"
+        ]
+      },
+      "Seven_Segment_0_Seg": {
+        "ports": [
+          "Seven_Segment_0/Seg",
+          "Seg"
+        ]
+      },
+      "Seven_Segment_0_an": {
+        "ports": [
+          "Seven_Segment_0/an",
+          "an"
+        ]
+      }
+    }
+  }
+}

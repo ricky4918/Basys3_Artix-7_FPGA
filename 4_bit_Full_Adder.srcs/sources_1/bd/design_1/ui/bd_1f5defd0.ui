@@ -1,0 +1,27 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.25",
+   "Default View_TopLeft":"-389,-158",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS-threadsafe
+#  -string -flagsOSRD
+preplace port port-id_OV_S -pg 1 -lvl 3 -x 260 -y 60 -defaultsOSRD
+preplace port port-id_OV_U -pg 1 -lvl 3 -x 260 -y 90 -defaultsOSRD
+preplace portBus A -pg 1 -lvl 0 -x -250 -y 20 -defaultsOSRD
+preplace portBus B -pg 1 -lvl 0 -x -250 -y 50 -defaultsOSRD
+preplace portBus Seg -pg 1 -lvl 3 -x 260 -y 0 -defaultsOSRD
+preplace portBus an -pg 1 -lvl 3 -x 260 -y 30 -defaultsOSRD
+preplace inst Seven_Segment_0 -pg 1 -lvl 2 -x 120 -y 30 -defaultsOSRD
+preplace inst Four_bit_Full_Adder_0 -pg 1 -lvl 1 -x -110 -y 40 -defaultsOSRD
+preplace netloc A_1 1 0 1 -230 20n
+preplace netloc B_1 1 0 1 N 50
+preplace netloc Four_bit_Full_Adder_0_OV_S 1 1 2 10 100 220J
+preplace netloc Four_bit_Full_Adder_0_OV_U 1 1 2 0 110 230J
+preplace netloc Four_bit_Full_Adder_0_Sum 1 1 1 10 20n
+preplace netloc Seven_Segment_0_Seg 1 2 1 220 0n
+preplace netloc Seven_Segment_0_an 1 2 1 220 30n
+levelinfo -pg 1 -250 -110 120 260
+pagesize -pg 1 -db -bbox -sgen -340 -40 360 310
+"
+}
+0
