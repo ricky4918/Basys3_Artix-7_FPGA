@@ -1,0 +1,6 @@
+set_property PACKAGE_PIN J1 [get_ports LED_out]
+set_property IOSTANDARD LVCMOS33 [get_ports clk_in]
+set_property IOSTANDARD LVCMOS33 [get_ports LED_out]
+set_property IOSTANDARD LVCMOS33 [get_ports push_button]
+set_property PACKAGE_PIN U18 [get_ports push_button]
+set_property PACKAGE_PIN W5 [get_ports clk_in]

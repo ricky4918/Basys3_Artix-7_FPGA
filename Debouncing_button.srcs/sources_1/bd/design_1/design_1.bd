@@ -1,0 +1,166 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xA1AB5620A1AB5620",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../Debouncing_button.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "D_FF_0": "",
+      "D_FF_1": "",
+      "And_Gate_0": "",
+      "Slow_Clock_0": ""
+    },
+    "ports": {
+      "clk_in": {
+        "direction": "I"
+      },
+      "push_button": {
+        "direction": "I"
+      },
+      "LED_out": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "D_FF_0": {
+        "vlnv": "xilinx.com:module_ref:D_FF:1.0",
+        "xci_name": "design_1_D_FF_0_0",
+        "xci_path": "ip\\design_1_D_FF_0_0\\design_1_D_FF_0_0.xci",
+        "inst_hier_path": "D_FF_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "D_FF",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O"
+          },
+          "Q_bar": {
+            "direction": "O"
+          },
+          "D": {
+            "direction": "I"
+          }
+        }
+      },
+      "D_FF_1": {
+        "vlnv": "xilinx.com:module_ref:D_FF:1.0",
+        "xci_name": "design_1_D_FF_0_1",
+        "xci_path": "ip\\design_1_D_FF_0_1\\design_1_D_FF_0_1.xci",
+        "inst_hier_path": "D_FF_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "D_FF",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "Q": {
+            "direction": "O"
+          },
+          "Q_bar": {
+            "direction": "O"
+          },
+          "D": {
+            "direction": "I"
+          }
+        }
+      },
+      "And_Gate_0": {
+        "vlnv": "xilinx.com:module_ref:And_Gate:1.0",
+        "xci_name": "design_1_And_Gate_0_0",
+        "xci_path": "ip\\design_1_And_Gate_0_0\\design_1_And_Gate_0_0.xci",
+        "inst_hier_path": "And_Gate_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "And_Gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "Y": {
+            "direction": "O"
+          }
+        }
+      },
+      "Slow_Clock_0": {
+        "vlnv": "xilinx.com:module_ref:Slow_Clock:1.0",
+        "xci_name": "design_1_Slow_Clock_0_0",
+        "xci_path": "ip\\design_1_Slow_Clock_0_0\\design_1_Slow_Clock_0_0.xci",
+        "inst_hier_path": "Slow_Clock_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Slow_Clock",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk_in": {
+            "direction": "I"
+          },
+          "clk_out": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "And_Gate_0_Y": {
+        "ports": [
+          "And_Gate_0/Y",
+          "LED_out"
+        ]
+      },
+      "D_FF_0_Q": {
+        "ports": [
+          "D_FF_0/Q",
+          "D_FF_1/D",
+          "And_Gate_0/A"
+        ]
+      },
+      "D_FF_1_Q_bar": {
+        "ports": [
+          "D_FF_1/Q_bar",
+          "And_Gate_0/B"
+        ]
+      },
+      "Slow_Clock_0_clk_out": {
+        "ports": [
+          "Slow_Clock_0/clk_out",
+          "D_FF_0/clk",
+          "D_FF_1/clk"
+        ]
+      },
+      "clk_in_1": {
+        "ports": [
+          "clk_in",
+          "Slow_Clock_0/clk_in"
+        ]
+      },
+      "push_button_1": {
+        "ports": [
+          "push_button",
+          "D_FF_0/D"
+        ]
+      }
+    }
+  }
+}
