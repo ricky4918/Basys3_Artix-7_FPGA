@@ -16,4 +16,4 @@
 
 **5. Binary to Decimal Converter**
 
-**6. Aram System**
+**6. Alarm System**
