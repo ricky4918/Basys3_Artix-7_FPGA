@@ -1,0 +1,33 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.25",
+   "Default View_TopLeft":"-420,-174",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS-threadsafe
+#  -string -flagsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x -40 -y 30 -defaultsOSRD
+preplace port port-id_transmit -pg 1 -lvl 0 -x -40 -y 60 -defaultsOSRD
+preplace port port-id_btn -pg 1 -lvl 0 -x -40 -y 90 -defaultsOSRD
+preplace port port-id_TxD -pg 1 -lvl 2 -x 360 -y 0 -defaultsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x -40 -y 120 -defaultsOSRD
+preplace port port-id_TxD_debug -pg 1 -lvl 2 -x 360 -y -30 -defaultsOSRD
+preplace port port-id_transmit_debbug -pg 1 -lvl 2 -x 360 -y 30 -defaultsOSRD
+preplace port port-id_btn_debug -pg 1 -lvl 2 -x 360 -y 60 -defaultsOSRD
+preplace port port-id_clk_debug -pg 1 -lvl 2 -x 360 -y 90 -defaultsOSRD
+preplace portBus data -pg 1 -lvl 0 -x -40 -y 0 -defaultsOSRD
+preplace inst Top_Module_0 -pg 1 -lvl 1 -x 160 -y 100 -defaultsOSRD
+preplace netloc data_1 1 0 1 20 0n
+preplace netloc clk_1 1 0 1 10 30n
+preplace netloc transmit_1 1 0 1 0 60n
+preplace netloc btn_1 1 0 1 -10 90n
+preplace netloc Top_Module_0_TxD 1 1 1 310 0n
+preplace netloc reset_1 1 0 1 -20 120n
+preplace netloc Top_Module_0_TxD_debug 1 1 1 300 -30n
+preplace netloc Top_Module_0_transmit_debbug 1 1 1 320 30n
+preplace netloc Top_Module_0_btn_debug 1 1 1 330 60n
+preplace netloc Top_Module_0_clk_debug 1 1 1 340 90n
+levelinfo -pg 1 -40 160 360
+pagesize -pg 1 -db -bbox -sgen -150 -50 520 200
+"
+}
+
