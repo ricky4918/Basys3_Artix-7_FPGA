@@ -1,0 +1,128 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x528194D7528194D7",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../Alarm_System.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Home_Alarm_System_0": "",
+      "Seven_Segment_0": ""
+    },
+    "ports": {
+      "sw": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "en": {
+        "direction": "I"
+      },
+      "seg": {
+        "direction": "O",
+        "left": "6",
+        "right": "0"
+      },
+      "an": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "Alarm_Led": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "Home_Alarm_System_0": {
+        "vlnv": "xilinx.com:module_ref:Home_Alarm_System:1.0",
+        "xci_name": "design_1_Home_Alarm_System_0_0",
+        "xci_path": "ip\\design_1_Home_Alarm_System_0_0\\design_1_Home_Alarm_System_0_0.xci",
+        "inst_hier_path": "Home_Alarm_System_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Home_Alarm_System",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "sw": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "en": {
+            "direction": "I"
+          },
+          "S_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "Seven_Segment_0": {
+        "vlnv": "xilinx.com:module_ref:Seven_Segment:1.0",
+        "xci_name": "design_1_Seven_Segment_0_1",
+        "xci_path": "ip\\design_1_Seven_Segment_0_1\\design_1_Seven_Segment_0_1.xci",
+        "inst_hier_path": "Seven_Segment_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Seven_Segment",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "seg": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          },
+          "an": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Home_Alarm_System_0_S_out": {
+        "ports": [
+          "Home_Alarm_System_0/S_out",
+          "Alarm_Led",
+          "Seven_Segment_0/in"
+        ]
+      },
+      "Seven_Segment_0_an": {
+        "ports": [
+          "Seven_Segment_0/an",
+          "an"
+        ]
+      },
+      "Seven_Segment_0_seg": {
+        "ports": [
+          "Seven_Segment_0/seg",
+          "seg"
+        ]
+      },
+      "en_1": {
+        "ports": [
+          "en",
+          "Home_Alarm_System_0/en"
+        ]
+      },
+      "sw_1": {
+        "ports": [
+          "sw",
+          "Home_Alarm_System_0/sw"
+        ]
+      }
+    }
+  }
+}

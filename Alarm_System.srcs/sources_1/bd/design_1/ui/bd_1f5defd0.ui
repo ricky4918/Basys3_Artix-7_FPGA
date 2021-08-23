@@ -1,0 +1,24 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.25",
+   "Default View_TopLeft":"-530,-210",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port port-id_en -pg 1 -lvl 0 -x -220 -y -30 -defaultsOSRD
+preplace port port-id_Alarm_Led -pg 1 -lvl 3 -x 370 -y 140 -defaultsOSRD
+preplace portBus sw -pg 1 -lvl 0 -x -220 -y 0 -defaultsOSRD
+preplace portBus seg -pg 1 -lvl 3 -x 370 -y -30 -defaultsOSRD
+preplace portBus an -pg 1 -lvl 3 -x 370 -y -60 -defaultsOSRD
+preplace inst Home_Alarm_System_0 -pg 1 -lvl 1 -x 10 -y 70 -defaultsOSRD
+preplace inst Seven_Segment_0 -pg 1 -lvl 2 -x 240 -y 70 -defaultsOSRD
+preplace netloc Home_Alarm_System_0_S_out 1 1 2 120 140 N
+preplace netloc sw_1 1 0 1 -200 0n
+preplace netloc en_1 1 0 1 -190 -30n
+preplace netloc Seven_Segment_0_seg 1 2 1 350 -30n
+preplace netloc Seven_Segment_0_an 1 2 1 340 -60n
+levelinfo -pg 1 -220 10 240 370
+pagesize -pg 1 -db -bbox -sgen -320 -120 490 160
+"
+}
+
