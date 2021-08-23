@@ -17,3 +17,5 @@
 **5. Binary to Decimal Converter**
 
 **6. Alarm System**
+
+**7. Parking slot System**
