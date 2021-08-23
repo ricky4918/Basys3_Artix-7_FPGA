@@ -21,3 +21,5 @@
 **7. Parking slot System**
 
 **8. Button Debouncer**
+
+**9. UART-TxD Serial Communication**
