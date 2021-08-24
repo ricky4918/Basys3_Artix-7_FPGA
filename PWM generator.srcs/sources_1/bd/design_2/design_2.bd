@@ -1,0 +1,90 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x815850EC1D6565A3",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../PWM generator.gen/sources_1/bd/design_2",
+      "name": "design_2",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.1"
+    },
+    "design_tree": {
+      "PWM_Generator_Verilog_0": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "100000000"
+          }
+        }
+      },
+      "inc_duty": {
+        "direction": "I"
+      },
+      "dec_duty": {
+        "direction": "I"
+      },
+      "PWM_OUT": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "PWM_Generator_Verilog_0": {
+        "vlnv": "xilinx.com:module_ref:PWM_Generator_Verilog:1.0",
+        "xci_name": "design_2_PWM_Generator_Verilog_0_1",
+        "xci_path": "ip\\design_2_PWM_Generator_Verilog_0_1\\design_2_PWM_Generator_Verilog_0_1.xci",
+        "inst_hier_path": "PWM_Generator_Verilog_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "PWM_Generator_Verilog",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "inc_duty": {
+            "direction": "I"
+          },
+          "dec_duty": {
+            "direction": "I"
+          },
+          "PWM_OUT": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "PWM_Generator_Verilog_0_PWM_OUT": {
+        "ports": [
+          "PWM_Generator_Verilog_0/PWM_OUT",
+          "PWM_OUT"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "PWM_Generator_Verilog_0/clk"
+        ]
+      },
+      "dec_duty_1": {
+        "ports": [
+          "dec_duty",
+          "PWM_Generator_Verilog_0/dec_duty"
+        ]
+      },
+      "inc_duty_1": {
+        "ports": [
+          "inc_duty",
+          "PWM_Generator_Verilog_0/inc_duty"
+        ]
+      }
+    }
+  }
+}
