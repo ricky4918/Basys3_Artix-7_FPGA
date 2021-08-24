@@ -25,3 +25,5 @@
 **9. UART-TxD Serial Communication**
 
 **10. Scrolling LEDs**
+
+**11. PWM generator**
