@@ -23,3 +23,5 @@
 **8. Button Debouncer**
 
 **9. UART-TxD Serial Communication**
+
+**10. Scrolling LEDs**
