@@ -1,0 +1,129 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x3F5F38D8D9A059EC",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../Scrolling LEDs.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Leds_0": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "seg": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "an": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "led": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      }
+    },
+    "components": {
+      "Leds_0": {
+        "vlnv": "xilinx.com:module_ref:Leds:1.0",
+        "xci_name": "design_1_Leds_0_0",
+        "xci_path": "ip\\design_1_Leds_0_0\\design_1_Leds_0_0.xci",
+        "inst_hier_path": "Leds_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Leds",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "led": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "seg": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "an": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Leds_0_an": {
+        "ports": [
+          "Leds_0/an",
+          "an"
+        ]
+      },
+      "Leds_0_led": {
+        "ports": [
+          "Leds_0/led",
+          "led"
+        ]
+      },
+      "Leds_0_seg": {
+        "ports": [
+          "Leds_0/seg",
+          "seg"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "Leds_0/clk"
+        ]
+      }
+    }
+  }
+}
