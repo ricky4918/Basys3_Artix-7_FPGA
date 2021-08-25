@@ -1,0 +1,10 @@
+set_property PACKAGE_PIN W5 [get_ports clk_FPGA]
+set_property IOSTANDARD LVCMOS33 [get_ports clk_FPGA]
+set_property IOSTANDARD LVCMOS33 [get_ports NWRST]
+set_property IOSTANDARD LVCMOS33 [get_ports RSET]
+set_property IOSTANDARD LVCMOS33 [get_ports TINT]
+set_property PACKAGE_PIN B16 [get_ports NWRST]
+set_property PACKAGE_PIN A16 [get_ports RSET]
+set_property PACKAGE_PIN B15 [get_ports TINT]
+
+set_property DRIVE 12 [get_ports NWRST]
