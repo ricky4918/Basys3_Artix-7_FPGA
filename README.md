@@ -27,3 +27,5 @@
 **10. Scrolling LEDs**
 
 **11. PWM generator**
+
+**12. PWM different Signals within same period**
