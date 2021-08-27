@@ -1,0 +1,42 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.25",
+   "Default View_TopLeft":"-784,-30",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x -520 -y 20 -defaultsOSRD
+preplace port port-id_Rst_n -pg 1 -lvl 0 -x -520 -y 50 -defaultsOSRD
+preplace port port-id_Rd -pg 1 -lvl 0 -x -520 -y 80 -defaultsOSRD
+preplace port port-id_fifo_empty -pg 1 -lvl 3 -x 170 -y 20 -defaultsOSRD
+preplace port port-id_fifo_full -pg 1 -lvl 3 -x 170 -y 50 -defaultsOSRD
+preplace port port-id_fifo_threshold -pg 1 -lvl 3 -x 170 -y 80 -defaultsOSRD
+preplace port port-id_fifo_overflow -pg 1 -lvl 3 -x 170 -y 110 -defaultsOSRD
+preplace port port-id_fifo_underflow -pg 1 -lvl 3 -x 170 -y 140 -defaultsOSRD
+preplace port port-id_Wr -pg 1 -lvl 0 -x -520 -y 110 -defaultsOSRD
+preplace portBus data_in -pg 1 -lvl 0 -x -520 -y -10 -defaultsOSRD
+preplace portBus Data_out -pg 1 -lvl 3 -x 170 -y -10 -defaultsOSRD
+preplace inst Memory_Array_0 -pg 1 -lvl 2 -x -30 -y 70 -defaultsOSRD
+preplace inst Read_Pointer_0 -pg 1 -lvl 1 -x -340 -y 190 -defaultsOSRD
+preplace inst Status_Signals_0 -pg 1 -lvl 2 -x -30 -y 320 -defaultsOSRD
+preplace inst Write_Pointer_0 -pg 1 -lvl 1 -x -340 -y 350 -defaultsOSRD
+preplace netloc data_in_1 1 0 2 N -10 -180
+preplace netloc clk_1 1 0 2 -470 50 -180
+preplace netloc Memory_Array_0_Data_out 1 2 1 100 -10n
+preplace netloc Read_Pointer_0_Rptr 1 1 1 -160 110n
+preplace netloc Rst_n_1 1 0 2 -490 440 -160
+preplace netloc Rd_1 1 0 2 -480 90 -210
+preplace netloc Status_Signals_0_fifo_empty 1 0 3 -460 100 -170J 170 110
+preplace netloc Status_Signals_0_fifo_full 1 0 3 -460 460 N 460 130
+preplace netloc Status_Signals_0_fifo_threshold 1 2 1 120 80n
+preplace netloc Status_Signals_0_fifo_overflow 1 2 1 140 110n
+preplace netloc Status_Signals_0_fifo_underflow 1 2 1 150 140n
+preplace netloc Wr_1 1 0 2 -500 450 -170
+preplace netloc Write_Pointer_0_FIFO_we 1 1 1 -220 70n
+preplace netloc Read_Pointer_0_FIFO_Rd 1 1 1 -200 200n
+preplace netloc Write_Pointer_0_Wptr 1 1 1 -190 90n
+levelinfo -pg 1 -520 -340 -30 170
+pagesize -pg 1 -db -bbox -sgen -650 -30 310 520
+"
+}
+

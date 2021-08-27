@@ -1,0 +1,424 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x4459102C31ED977B",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../FIFO_Memory.gen/sources_1/bd/design_2",
+      "name": "design_2",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Memory_Array_0": "",
+      "Read_Pointer_0": "",
+      "Status_Signals_0": "",
+      "Write_Pointer_0": ""
+    },
+    "ports": {
+      "data_in": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_2_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "Data_out": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "Rst_n": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "Rd": {
+        "direction": "I"
+      },
+      "fifo_empty": {
+        "direction": "O"
+      },
+      "fifo_full": {
+        "direction": "O"
+      },
+      "fifo_threshold": {
+        "direction": "O"
+      },
+      "fifo_overflow": {
+        "direction": "O"
+      },
+      "fifo_underflow": {
+        "direction": "O"
+      },
+      "Wr": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "Memory_Array_0": {
+        "vlnv": "xilinx.com:module_ref:Memory_Array:1.0",
+        "xci_name": "design_2_Memory_Array_0_0",
+        "xci_path": "ip\\design_2_Memory_Array_0_0\\design_2_Memory_Array_0_0.xci",
+        "inst_hier_path": "Memory_Array_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Memory_Array",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "data_in": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_2_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "FIFO_we": {
+            "direction": "I"
+          },
+          "Wptr": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "Rptr": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "Data_out": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "Read_Pointer_0": {
+        "vlnv": "xilinx.com:module_ref:Read_Pointer:1.0",
+        "xci_name": "design_2_Read_Pointer_0_0",
+        "xci_path": "ip\\design_2_Read_Pointer_0_0\\design_2_Read_Pointer_0_0.xci",
+        "inst_hier_path": "Read_Pointer_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Read_Pointer",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "Rd": {
+            "direction": "I"
+          },
+          "FIFO_empty": {
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_2_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "Rst_n": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "Rptr": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "FIFO_Rd": {
+            "direction": "O"
+          }
+        }
+      },
+      "Status_Signals_0": {
+        "vlnv": "xilinx.com:module_ref:Status_Signals:1.0",
+        "xci_name": "design_2_Status_Signals_0_0",
+        "xci_path": "ip\\design_2_Status_Signals_0_0\\design_2_Status_Signals_0_0.xci",
+        "inst_hier_path": "Status_Signals_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Status_Signals",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "fifo_full": {
+            "direction": "O"
+          },
+          "fifo_empty": {
+            "direction": "O"
+          },
+          "fifo_threshold": {
+            "direction": "O"
+          },
+          "fifo_overflow": {
+            "direction": "O"
+          },
+          "fifo_underflow": {
+            "direction": "O"
+          },
+          "wr": {
+            "direction": "I"
+          },
+          "rd": {
+            "direction": "I"
+          },
+          "fifo_we": {
+            "direction": "I"
+          },
+          "fifo_rd": {
+            "direction": "I"
+          },
+          "wptr": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "rptr": {
+            "direction": "I",
+            "left": "4",
+            "right": "0"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_2_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rst_n": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          }
+        }
+      },
+      "Write_Pointer_0": {
+        "vlnv": "xilinx.com:module_ref:Write_Pointer:1.0",
+        "xci_name": "design_2_Write_Pointer_0_0",
+        "xci_path": "ip\\design_2_Write_Pointer_0_0\\design_2_Write_Pointer_0_0.xci",
+        "inst_hier_path": "Write_Pointer_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Write_Pointer",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "Wr": {
+            "direction": "I"
+          },
+          "FIFO_full": {
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_2_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "Rst_n": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "FIFO_we": {
+            "direction": "O"
+          },
+          "Wptr": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Memory_Array_0_Data_out": {
+        "ports": [
+          "Memory_Array_0/Data_out",
+          "Data_out"
+        ]
+      },
+      "Rd_1": {
+        "ports": [
+          "Rd",
+          "Read_Pointer_0/Rd",
+          "Status_Signals_0/rd"
+        ]
+      },
+      "Read_Pointer_0_FIFO_Rd": {
+        "ports": [
+          "Read_Pointer_0/FIFO_Rd",
+          "Status_Signals_0/fifo_rd"
+        ]
+      },
+      "Read_Pointer_0_Rptr": {
+        "ports": [
+          "Read_Pointer_0/Rptr",
+          "Memory_Array_0/Rptr",
+          "Status_Signals_0/rptr"
+        ]
+      },
+      "Rst_n_1": {
+        "ports": [
+          "Rst_n",
+          "Read_Pointer_0/Rst_n",
+          "Write_Pointer_0/Rst_n",
+          "Status_Signals_0/rst_n"
+        ]
+      },
+      "Status_Signals_0_fifo_empty": {
+        "ports": [
+          "Status_Signals_0/fifo_empty",
+          "Read_Pointer_0/FIFO_empty",
+          "fifo_empty"
+        ]
+      },
+      "Status_Signals_0_fifo_full": {
+        "ports": [
+          "Status_Signals_0/fifo_full",
+          "fifo_full",
+          "Write_Pointer_0/FIFO_full"
+        ]
+      },
+      "Status_Signals_0_fifo_overflow": {
+        "ports": [
+          "Status_Signals_0/fifo_overflow",
+          "fifo_overflow"
+        ]
+      },
+      "Status_Signals_0_fifo_threshold": {
+        "ports": [
+          "Status_Signals_0/fifo_threshold",
+          "fifo_threshold"
+        ]
+      },
+      "Status_Signals_0_fifo_underflow": {
+        "ports": [
+          "Status_Signals_0/fifo_underflow",
+          "fifo_underflow"
+        ]
+      },
+      "Wr_1": {
+        "ports": [
+          "Wr",
+          "Write_Pointer_0/Wr",
+          "Status_Signals_0/wr"
+        ]
+      },
+      "Write_Pointer_0_FIFO_we": {
+        "ports": [
+          "Write_Pointer_0/FIFO_we",
+          "Memory_Array_0/FIFO_we",
+          "Status_Signals_0/fifo_we"
+        ]
+      },
+      "Write_Pointer_0_Wptr": {
+        "ports": [
+          "Write_Pointer_0/Wptr",
+          "Status_Signals_0/wptr",
+          "Memory_Array_0/Wptr"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "Memory_Array_0/clk",
+          "Read_Pointer_0/clk",
+          "Write_Pointer_0/clk",
+          "Status_Signals_0/clk"
+        ]
+      },
+      "data_in_1": {
+        "ports": [
+          "data_in",
+          "Memory_Array_0/data_in"
+        ]
+      }
+    }
+  }
+}
